@@ -1,0 +1,17 @@
+.keyboard {
+    display: flex;
+}
+
+.key {
+    cursor: pointer;
+    display: block;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid;
+    text-align: center;
+
+    &--disabled {
+        opacity: 0.5;
+    }
+}

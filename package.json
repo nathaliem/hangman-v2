@@ -1,0 +1,31 @@
+{
+  "name": "hangman-v2",
+  "version": "1.0.0",
+  "description": "Hangman",
+  "main": "app/js/index.js",
+  "scripts": {
+    "dev": "parcel app/index.html",
+    "build": "parcel build app/index.html",
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nathaliem/hangman-v2.git"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "Nathalie Maes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nathaliem/hangman-v2/issues"
+  },
+  "homepage": "https://github.com/nathaliem/hangman-v2#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.11.0",
+    "sass": "^1.17.0"
+  },
+  "dependencies": {
+    "firebase": "^5.8.2"
+  }
+}
