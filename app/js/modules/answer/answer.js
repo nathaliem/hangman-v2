@@ -7,6 +7,7 @@ const Answer = (() => {
         answer,
         word,
         $answer = document.querySelector('.answer');
+    let winEvent = new Event('win');
 
     const _getNewWord = () => {
         //answer = 'GOD OF WAR';
@@ -44,6 +45,10 @@ const Answer = (() => {
 
     const _updateWord = () => {
         $answer.innerText = word;
+        
+        if (_isAnswerGuessed()) {
+            document.dispatchEvent(winEvent);
+        } 
     }
 
     const _isAnswerGuessed = () => {

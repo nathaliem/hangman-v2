@@ -26,6 +26,9 @@
     "sass": "^1.17.0"
   },
   "dependencies": {
-    "firebase": "^5.8.2"
+    "animate.css": "^3.7.0",
+    "firebase": "^5.8.2",
+    "modules": "^0.4.0",
+    "vivus": "^0.4.4"
   }
 }

@@ -1,0 +1,33 @@
+.hangman {
+    max-height: 60vh;
+}
+
+svg {
+    height: 100%;
+}
+
+.body {
+    fill: none;
+    stroke: #000;
+    stroke-width: 8px;
+}
+
+#head {
+    stroke-width: 16px;
+}
+
+#drawing {
+    .hidden {
+        opacity: 0;
+    }
+}
+
+#faces {
+    g {
+        opacity: 0;
+
+        &.show {
+            opacity: 1;
+        }
+    }
+}

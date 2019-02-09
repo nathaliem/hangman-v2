@@ -1,17 +1,20 @@
 'use strict';
 
 const answer = require('../answer/answer');
+const drawing = require('../drawing/drawing');
 
 const Keyboard = (() => {
     const $keyboard = document.querySelector('.keyboard');
     let $keys;
+
+    let gameOverEvent = new Event('gameOver');
 
     const _createKeyboard = () => {
         $keyboard.innerHTML = '';
 
         for (let i = 65; i < 91; i++) {
             $keyboard.innerHTML +=
-                `<div class="key">
+                `<div class="key" data-letter="${String.fromCharCode(i)}">
                     <span>${String.fromCharCode(i)}</span>
                 </div>`;
         }
@@ -28,24 +31,43 @@ const Keyboard = (() => {
     }
 
     const _addKeyHandlers = () => {
-        //document.addEventListener('keyup', _handleKeyUp);
+        document.addEventListener('keyup', _guessLetter);
     }
+
+    const _removeEventListeners = () => {
+        for (let i = 0; i < $keys.length; i++) {
+            $keys[i].removeEventListener('click', _guessLetter);
+        }
+        document.removeEventListener('keyup', _guessLetter);
+    } 
 
     const _guessLetter = e => {
-        if (!answer.guessLetter(e.target.innerText)) {
-            //drawing.nextOneUp();
+        let letter;
+        let $pressedKey = e.target;
+        
+        if (e.keyCode > 64 && e.keyCode < 91) {
+            letter = String.fromCharCode(e.keyCode);
+            $pressedKey = document.querySelector(`.key[data-letter="${letter}"]`);
+        } else if (e.keyCode) {
+            return;
+        } else {
+            letter = e.target.getAttribute('data-letter');
         }
-       // e.target.disable();
+
+        if (!answer.guessLetter(letter) && !drawing.isFinished()) {
+            drawing.revealNext();
+            if (drawing.isFinished()) {
+                document.dispatchEvent(gameOverEvent);
+                _removeEventListeners();
+            }
+        }
+        _disableKey($pressedKey);
     }
 
-    // Object.prototype.disable = function() {
-    //     this.classList.add('key--disabled');
-    //     this.removeEventListener('click', _guessLetter);
-    // };
-
-    // Object.prototype.enable = function() {
-    //     this.classList.remove('key--disabled');
-    // }
+    const _disableKey = $key => {
+        $key.classList.add('key--disabled');
+        $key.removeEventListener('click', _guessLetter);
+    }
 
     return {
         init: () => {

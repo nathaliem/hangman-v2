@@ -10,7 +10,6 @@ const Store = (() => {
     return {
         getCategories: () => {},
         getWords: () => {
-            console.log('get words');
             let words = [];
             return db.collection('answers').get()
                 .then((snapshot) => {

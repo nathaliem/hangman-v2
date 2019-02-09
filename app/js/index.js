@@ -1,5 +1,7 @@
 import '../sass/index.scss';
+require('animate.css');
 
 require('firebase');
 
-require('./hangman.js');
+const hangman = require('./hangman');
+hangman.startGame();
