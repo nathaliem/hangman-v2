@@ -1,5 +1,4 @@
 import '../sass/index.scss';
-require('animate.css');
 
 require('firebase');
 

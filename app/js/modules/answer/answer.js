@@ -1,28 +1,42 @@
 'use strict';
 
-const { store } = require('../../utils');
+const { $, store } = require('../../utils');
 
 const Answer = (() => {
     let words = [],
         answer,
         word,
+        $category = document.querySelector('.category'),
         $answer = document.querySelector('.answer');
     let winEvent = new Event('win');
 
     const _getNewWord = () => {
         //answer = 'GOD OF WAR';
-        store.getWords().then(function(response){
-            words = response;
-            answer = words[0].toUpperCase();
-            word = _obfuscateAnswer();
-            _updateWord();
-        });
+        $category.innerText = 'Games';
+        // store.getWords().then(function(response){
+        //     words = response;
+        //     answer = words[0].toUpperCase();
+        //     word = _obfuscateAnswer();
+        //     _updateWord();
+        // });
+        words = store.getWords();
+        let randomNumber = $.getRandomNumber(words.length)
+        console.log(words, words.length, randomNumber);
+        answer = words[randomNumber].toUpperCase();
+        console.log(answer);
+        word = _obfuscateAnswer();
+        _updateWord();
     }
 
     const _obfuscateAnswer = () => {
         let wordArray = answer.split('');
-        const obfuscated = wordArray.map(letter => (letter !== ' ') ? '_' : letter).join('');
-
+        const obfuscated = wordArray.map(letter => {
+            if (letter !== ' ' && letter !== ':' && letter !== '\'') {
+                return '_';
+            } else {
+                return letter;
+            }
+        }).join('');
         return obfuscated;
     }
 
@@ -37,6 +51,7 @@ const Answer = (() => {
                 letterFound = true;
             }
         }
+
         word = wordArray.join('');
         _updateWord();
 
@@ -45,7 +60,7 @@ const Answer = (() => {
 
     const _updateWord = () => {
         $answer.innerText = word;
-        
+
         if (_isAnswerGuessed()) {
             document.dispatchEvent(winEvent);
         } 

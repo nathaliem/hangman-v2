@@ -44,7 +44,7 @@ const Keyboard = (() => {
     const _guessLetter = e => {
         let letter;
         let $pressedKey = e.target;
-        
+
         if (e.keyCode > 64 && e.keyCode < 91) {
             letter = String.fromCharCode(e.keyCode);
             $pressedKey = document.querySelector(`.key[data-letter="${letter}"]`);
@@ -57,8 +57,10 @@ const Keyboard = (() => {
         if (!answer.guessLetter(letter) && !drawing.isFinished()) {
             drawing.revealNext();
             if (drawing.isFinished()) {
-                document.dispatchEvent(gameOverEvent);
                 _removeEventListeners();
+                setTimeout(() => {
+                    document.dispatchEvent(gameOverEvent);
+                }, 1500);   
             }
         }
         _disableKey($pressedKey);

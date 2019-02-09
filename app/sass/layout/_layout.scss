@@ -1,0 +1,37 @@
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.header__category {
+    text-align: left;
+
+    h1 {
+        color: $red;
+        text-transform: uppercase;
+    }
+
+    span {
+        text-transform: uppercase;
+        font-size: .5em;
+        color: $green;
+        opacity: 0.7;
+    }
+}
+
+.score {
+    font-weight: bold;
+    color: $green;
+}
+
+.main-content {
+    padding: 1em;
+    background-color: $white;
+    text-align: center;
+}
+
+.main-content {
+    font-family: $main-font, 'sans-serif';
+}

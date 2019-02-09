@@ -37,7 +37,7 @@ const Drawing = (() => {
         currentPartId = $currentPart.getAttribute('id');
         $currentPart.classList.remove('hidden');
 
-        toAnimate = new vivus(currentPartId, { duration: 50, type: 'sync' }, () => {
+        toAnimate = new vivus(currentPartId, { duration: 25, type: 'sync' }, () => {
             _drawFace();
         });
     }

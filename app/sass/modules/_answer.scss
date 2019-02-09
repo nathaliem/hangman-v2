@@ -1,3 +1,10 @@
 .answer {
-    letter-spacing: 3px;
+    text-align: center;
+    letter-spacing: 5px;
+    margin: 20px 0;
+    display: inline-block;
+    background-color: $red;
+    color: $white;
+    font-size: 2em;
+    padding: 0.5em 2em;
 }

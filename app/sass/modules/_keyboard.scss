@@ -1,18 +1,29 @@
 .keyboard {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-gap: 5px;
+    margin: 20px 0;
+    text-align: center;
 }
 
 .key {
     display: block;
-    width: 25px;
-    height: 25px;
-    line-height: 25px;
-    border: 1px solid;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
     text-align: center;
     cursor: pointer;
+    background-color: $green;
+    color: $white;
+    //margin: 1px;
 
     &--disabled {
         opacity: 0.5;
+        pointer-events: none;
+    }
+
+    &:hover {
+        background-color: $blue;
     }
 
     span {
