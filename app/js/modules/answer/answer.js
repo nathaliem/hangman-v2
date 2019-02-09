@@ -7,8 +7,8 @@ const Answer = (() => {
         answer,
         word,
         $category = document.querySelector('.category'),
-        $answer = document.querySelector('.answer');
-    let winEvent = new Event('win');
+        $answer = document.querySelector('.answer'),
+        winEvent = new Event('win');
 
     const _getNewWord = () => {
         $category.innerText = 'Games';
@@ -29,6 +29,7 @@ const Answer = (() => {
                 return letter;
             }
         }).join('');
+        
         return obfuscated;
     }
 
