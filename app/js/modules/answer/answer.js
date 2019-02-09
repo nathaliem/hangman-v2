@@ -21,9 +21,7 @@ const Answer = (() => {
     }
 
     const _obfuscateAnswer = () => {
-        answer = "No Man's Sky".toUpperCase();
         let wordArray = answer.split('');
-        console.log(wordArray);
         const obfuscated = wordArray.map(letter => {
             if (letter !== ' ' && letter !== ':' && letter !== '\'') {
                 return '_';
