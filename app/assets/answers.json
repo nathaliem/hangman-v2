@@ -1,0 +1,412 @@
+{
+    "answers": [
+        {
+            "name": "God Of War",
+            "categoryId": 1
+        },
+        {
+            "name": "Red Dead Redemption",
+            "categoryId": 1
+        },
+        {
+            "name": "Spyro",
+            "categoryId": 1
+        },
+        {
+            "name": "Titanfall",
+            "categoryId": 1
+        },
+        {
+            "name": "Tomb Raider",
+            "categoryId": 1
+        },
+        {
+            "name": "Kingdom Hearts",
+            "categoryId": 1
+        },
+        {
+            "name": "PlayerUnknown Battlegrounds",
+            "categoryId": 1
+        },
+        {
+            "name": "Minecraft",
+            "categoryId": 1
+        },
+        {
+            "name": "Fortnite",
+            "categoryId": 1
+        },
+        {
+            "name": "Resident Evil",
+            "categoryId": 1
+        },
+        {
+            "name": "Assassin’s Creed",
+            "categoryId": 1
+        },
+        {
+            "name": "Apex Legends",
+            "categoryId": 1
+        },
+        {
+            "name": "Anthem",
+            "categoryId": 1
+        },
+        {
+            "name": "The Division",
+            "categoryId": 1
+        },
+        {
+            "name": "Super Smash Bros",
+            "categoryId": 1
+        },
+        {
+            "name": "Pokemon",
+            "categoryId": 1
+        },
+        {
+            "name": "Doom",
+            "categoryId": 1
+        },
+        {
+            "name": "Grand Theft Auto",
+            "categoryId": 1
+        },
+        {
+            "name": "The Witcher",
+            "categoryId": 1
+        },
+        {
+            "name": "Borderlands",
+            "categoryId": 1
+        },
+        {
+            "name": "Fifa",
+            "categoryId": 1
+        },
+        {
+            "name": "Metro",
+            "categoryId": 1
+        },
+        {
+            "name": "Fallout",
+            "categoryId": 1
+        },
+        {
+            "name": "Battlefield",
+            "categoryId": 1
+        },
+        {
+            "name": "Forza",
+            "categoryId": 1
+        },
+        {
+            "name": "Halo",
+            "categoryId": 1
+        },
+        {
+            "name": "The Legend of Zelda",
+            "categoryId": 1
+        },
+        {
+            "name": "Bioshock",
+            "categoryId": 1
+        },
+        {
+            "name": "Call Of Duty",
+            "categoryId": 1
+        },
+        {
+            "name": "Detroit Become Human",
+            "categoryId": 1
+        },
+        {
+            "name": "Heavy Rain",
+            "categoryId": 1
+        },
+        {
+            "name": "Far Cry",
+            "categoryId": 1
+        },
+        {
+            "name": "Ace Combat",
+            "categoryId": 1
+        },
+        {
+            "name": "Need For Speed",
+            "categoryId": 1
+        },
+        {
+            "name": "Rocket League",
+            "categoryId": 1
+        },
+        {
+            "name": "The Sims",
+            "categoryId": 1
+        },
+        {
+            "name": "Beat Saber",
+            "categoryId": 1
+        },
+        {
+            "name": "Gran Turismo",
+            "categoryId": 1
+        },
+        {
+            "name": "Tekken",
+            "categoryId": 1
+        },
+        {
+            "name": "Mortal Kombat",
+            "categoryId": 1
+        },
+        {
+            "name": "Mario",
+            "categoryId": 1
+        },
+        {
+            "name": "Uncharted",
+            "categoryId": 1
+        },
+        {
+            "name": "Burnout",
+            "categoryId": 1
+        },
+        {
+            "name": "Undertale",
+            "categoryId": 1
+        },
+        {
+            "name": "Monster Hunter",
+            "categoryId": 1
+        },
+        {
+            "name": "Destiny",
+            "categoryId": 1
+        },
+        {
+            "name": "Ghost Recon",
+            "categoryId": 1
+        },
+        {
+            "name": "XCOM",
+            "categoryId": 1
+        },
+        {
+            "name": "A Way Out",
+            "categoryId": 1
+        },
+        {
+            "name": "Horizon Zero Dawn",
+            "categoryId": 1
+        },
+        {
+            "name": "Stardew Valley",
+            "categoryId": 1
+        },
+        {
+            "name": "Rayman",
+            "categoryId": 1
+        },
+        {
+            "name": "Bloodborne",
+            "categoryId": 1
+        },
+        {
+            "name": "Dark Souls",
+            "categoryId": 1
+        },
+        {
+            "name": "inFamous",
+            "categoryId": 1
+        },
+        {
+            "name": "Tetris",
+            "categoryId": 1
+        },
+        {
+            "name": "Metal Gear Solid",
+            "categoryId": 1
+        },
+        {
+            "name": "Hitman",
+            "categoryId": 1
+        },
+        {
+            "name": "Shadow of the Colossus",
+            "categoryId": 1
+        },
+        {
+            "name": "The Last Guardian",
+            "categoryId": 1
+        },
+        {
+            "name": "The Last Of Us",
+            "categoryId": 1
+        },
+        {
+            "name": "Persona",
+            "categoryId": 1
+        },
+        {
+            "name": "Yakuza",
+            "categoryId": 1
+        },
+        {
+            "name": "Crash Bandicoot",
+            "categoryId": 1
+        },
+        {
+            "name": "Kingdom Come Deliverance",
+            "categoryId": 1
+        },
+        {
+            "name": "We Happy Few",
+            "categoryId": 1
+        },
+        {
+            "name": "No Man’s Sky",
+            "categoryId": 1
+        },
+        {
+            "name": "Wolfenstein",
+            "categoryId": 1
+        },
+        {
+            "name": "Super Meat Boy",
+            "categoryId": 1
+        },
+        {
+            "name": "Life Is Strange",
+            "categoryId": 1
+        },
+        {
+            "name": "Shadow of Mordor",
+            "categoryId": 1
+        },
+        {
+            "name": "Goat Simulator",
+            "categoryId": 1
+        },
+        {
+            "name": "Mirror’s Edge",
+            "categoryId": 1
+        },
+        {
+            "name": "Celeste",
+            "categoryId": 1
+        },
+        {
+            "name": "I Am Bread",
+            "categoryId": 1
+        },
+        {
+            "name": "Octodad: Dadliest Catch",
+            "categoryId": 1
+        },
+        {
+            "name": "Payday",
+            "categoryId": 1
+        },
+        {
+            "name": "Ratchet and Clank",
+            "categoryId": 1
+        },
+        {
+            "name": "Watch Dogs",
+            "categoryId": 1
+        },
+        {
+            "name": "Devil May Cry",
+            "categoryId": 1
+        },
+        {
+            "name": "Final Fantasy",
+            "categoryId": 1
+        },
+        {
+            "name": "Nier Automata",
+            "categoryId": 1
+        },
+        {
+            "name": "Dragon Age",
+            "categoryId": 1
+        },
+        {
+            "name": "Skyrim",
+            "categoryId": 1
+        },
+        {
+            "name": "Mass Effect",
+            "categoryId": 1
+        },
+        {
+            "name": "Alien Isolation",
+            "categoryId": 1
+        },
+        {
+            "name": "Slender Man",
+            "categoryId": 1
+        },
+        {
+            "name": "Hello Neighbor",
+            "categoryId": 1
+        },
+        {
+            "name": "Until Dawn",
+            "categoryId": 1
+        },
+        {
+            "name": "Outlast",
+            "categoryId": 1
+        },
+        {
+            "name": "Amnesia",
+            "categoryId": 1
+        },
+        {
+            "name": "Cities Skylines",
+            "categoryId": 1
+        },
+        {
+            "name": "Zoo Tycoon",
+            "categoryId": 1
+        },
+        {
+            "name": "Rollercoaster Tycoon",
+            "categoryId": 1
+        },
+        {
+            "name": "Farming Simulator",
+            "categoryId": 1
+        },
+        {
+            "name": "Civilization",
+            "categoryId": 1
+        },
+        {
+            "name": "Portal",
+            "categoryId": 1
+        },
+        {
+            "name": "Half Life",
+            "categoryId": 1
+        },
+        {
+            "name": "Team Fortress",
+            "categoryId": 1
+        },
+        {
+            "name": "Age Of Empires",
+            "categoryId": 1
+        },
+        {
+            "name": "Crusader Kings",
+            "categoryId": 1
+        },
+        {
+            "name": "Europa Universalis",
+            "categoryId": 1
+        }
+    ]
+}
