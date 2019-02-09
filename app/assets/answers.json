@@ -407,6 +407,22 @@
         {
             "name": "Europa Universalis",
             "categoryId": 1
+        },
+        {
+            "name": "Plague Inc",
+            "categoryId": 1
+        },
+        {
+            "name": "Evolve",
+            "categoryId": 1
+        },
+        {
+            "name": "Deus Ex",
+            "categoryId": 1
+        },
+        {
+            "name": "Nioh",
+            "categoryId": 1
         }
     ]
 }
