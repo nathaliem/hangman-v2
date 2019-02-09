@@ -11,19 +11,11 @@ const Answer = (() => {
     let winEvent = new Event('win');
 
     const _getNewWord = () => {
-        //answer = 'GOD OF WAR';
         $category.innerText = 'Games';
-        // store.getWords().then(function(response){
-        //     words = response;
-        //     answer = words[0].toUpperCase();
-        //     word = _obfuscateAnswer();
-        //     _updateWord();
-        // });
         words = store.getWords();
         let randomNumber = $.getRandomNumber(words.length)
-        console.log(words, words.length, randomNumber);
+
         answer = words[randomNumber].toUpperCase();
-        console.log(answer);
         word = _obfuscateAnswer();
         _updateWord();
     }
