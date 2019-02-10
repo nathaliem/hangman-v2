@@ -55,8 +55,13 @@ const Answer = (() => {
         $answer.innerText = word;
 
         if (_isAnswerGuessed()) {
+            _revealWord();
             document.dispatchEvent(winEvent);
         } 
+    }
+
+    const _revealWord = () => {
+        $answer.innerText = answer;
     }
 
     const _isAnswerGuessed = () => {
@@ -72,6 +77,9 @@ const Answer = (() => {
         },
         guessLetter: letter => {
             return _updateLettersInWord(letter);
+        },
+        reveal: () => {
+            _revealWord();
         }
     }
 })();

@@ -57,6 +57,7 @@ const Keyboard = (() => {
         if (!answer.guessLetter(letter) && !drawing.isFinished()) {
             drawing.revealNext();
             if (drawing.isFinished()) {
+                answer.reveal();
                 _removeEventListeners();
                 setTimeout(() => {
                     document.dispatchEvent(gameOverEvent);
