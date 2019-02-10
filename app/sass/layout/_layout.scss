@@ -3,22 +3,37 @@
     justify-content: space-between;
     align-items: center;
     margin: 20px 0;
+    padding: 0 2em;
 }
 
 .header__category {
     text-align: left;
 
     h1 {
-        color: $red;
         text-transform: uppercase;
     }
+}
 
+.header__score {
+    text-align: right;
+}
+
+.header__category,
+.header__score {
     span {
         text-transform: uppercase;
-        font-size: .5em;
+        font-size: .7em;
         color: $green;
-        opacity: 0.7;
+        opacity: .7;
+        display: block;
+        margin-bottom: .2em;
     }
+
+    h1 {
+        color: $red;
+        font-size: 1.2em;
+    }
+    
 }
 
 .score {
@@ -32,6 +47,7 @@
     text-align: center;
 }
 
-.main-content {
-    font-family: $main-font, 'sans-serif';
+.hangman__app {
+    font-size: 16px;
+    font-family: $main-font, sans-serif;
 }

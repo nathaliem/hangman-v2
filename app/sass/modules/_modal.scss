@@ -4,9 +4,9 @@
 
 .tingle-modal * {
     box-sizing: border-box;
-  }
-  
-  .tingle-modal {
+}
+
+.tingle-modal {
     position: fixed;
     top: 0;
     right: 0;
@@ -24,8 +24,32 @@
     user-select: none;
     cursor: pointer;
     transition: transform .2s ease;
-  }
-  
+    font-family: $main-font, sans-serif;
+
+    h1 {
+        font-size: 2em;
+        text-transform: uppercase;
+    }
+
+    p {
+        margin-top: 1em;
+        font-size: 1.2em;
+        letter-spacing: 1px;
+    }
+}
+
+.modal--win {
+    h1 {
+        color: $green;
+    }
+}
+
+.modal--lose {
+    h1 {
+        color: $red;
+    }
+}
+
   /* confirm and alerts
   -------------------------------------------------------------- */
   
@@ -88,29 +112,6 @@
     padding: 3rem 3rem;
   }
   
-  .tingle-modal-box__footer {
-    padding: 1.5rem 2rem;
-    width: auto;
-    border-bottom-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    background-color: #f5f5f5;
-    cursor: auto;
-  }
-  
-  .tingle-modal-box__footer::after {
-    display: table;
-    clear: both;
-    content: "";
-  }
-  
-  .tingle-modal-box__footer--sticky {
-    position: fixed;
-    bottom: -200px; /* TODO : find a better way */
-    z-index: 10001;
-    opacity: 1;
-    transition: bottom .3s ease-in-out .3s;
-  }
-  
   /* state
   -------------------------------------------------------------- */
   
@@ -119,10 +120,6 @@
     right: 0;
     left: 0;
     overflow: hidden;
-  }
-  
-  .tingle-modal--visible .tingle-modal-box__footer {
-    bottom: 0;
   }
   
   .tingle-enabled .tingle-content-wrapper {
@@ -209,13 +206,6 @@
   
     .tingle-modal--noOverlayClose {
       padding-top: 0;
-    }
-  
-    .tingle-modal-box__footer .tingle-btn {
-      display: block;
-      float: none;
-      margin-bottom: 1rem;
-      width: 100%;
     }
   
     .tingle-modal__close {

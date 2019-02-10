@@ -21,8 +21,7 @@ const Hangman = (() => {
     }
 
     const _initWinModal = () => {
-        winModal = modal.getModal();
-
+        winModal = modal.getModal('win');
         winModal.opts.onOpen = () => {
             _startNewGame();
             setTimeout(() => {
@@ -33,8 +32,7 @@ const Hangman = (() => {
     }
 
     const _initGameOverModal = () => {
-        gameOverModal = modal.getModal();
-
+        gameOverModal = modal.getModal('lose');
         gameOverModal.opts.onOpen = () => {
             _endGame();
             setTimeout(() => {
@@ -59,7 +57,6 @@ const Hangman = (() => {
     }
 
     const _endGame = () => {
-        //alert('Helaas!');
         _handleStart();
         _resetScore();
     }

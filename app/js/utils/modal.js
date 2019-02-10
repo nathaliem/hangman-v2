@@ -3,17 +3,18 @@
 const tingle = require('tingle.js');
 
 const Modal = (function() {
-    const _initModal = () => {
+    const _initModal = className => {
         let modal = new tingle.modal({
-            footer: true,
-            closeMethods: ['enter', 'escape']
+            footer: false,
+            closeMethods: ['escape'],
+            cssClass: [`modal--${className}`]
         });
         return modal;
     }
 
     return {
-        getModal: () => {
-            return _initModal();
+        getModal: className => {
+            return _initModal(className);
         }
     }
 })();
