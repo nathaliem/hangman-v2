@@ -62,6 +62,7 @@ const Drawing = (() => {
     return {
         init: () => {
            _getSVGFile();
+           isFinished = false;
            currentStep = 1;
         },
         revealNext: () => {
