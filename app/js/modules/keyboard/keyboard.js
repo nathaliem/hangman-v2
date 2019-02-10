@@ -48,6 +48,10 @@ const Keyboard = (() => {
         if (e.keyCode > 64 && e.keyCode < 91) {
             letter = String.fromCharCode(e.keyCode);
             $pressedKey = document.querySelector(`.key[data-letter="${letter}"]`);
+            
+            if ($pressedKey.classList.contains('key--disabled')) {
+                return;
+            }
         } else if (e.keyCode) {
             return;
         } else {
