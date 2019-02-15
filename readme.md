@@ -9,5 +9,6 @@ Possible answers and categories can be added or tweaked as you wish.
 /app/data/answers.json
 ```
 
-## TODO
+## Todo
 * Ability to choose the category you want to play in
+* Testing
