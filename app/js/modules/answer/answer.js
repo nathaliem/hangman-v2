@@ -16,10 +16,7 @@ const Answer = (() => {
         let categories = store.getCategories();
         let randomNumber = $.getRandomNumber(categories.length);
 
-        console.log(categories);
-
         category = categories[randomNumber];
-        console.log(category);
         $category.innerText = category.name;
     }
 
@@ -27,7 +24,6 @@ const Answer = (() => {
         words = store.getWordsByCategoryId(category.id);
         let randomNumber = $.getRandomNumber(words.length)
 
-        console.log(words, randomNumber);
         answer = words[randomNumber].toUpperCase();
         word = _obfuscateAnswer();
         _updateWord();
