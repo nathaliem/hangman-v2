@@ -1,0 +1,28 @@
+.main-footer {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    border-top: 1px solid rgba($light-green, .5);
+    padding: 10px 10px 0 10px;
+
+    span {
+        font-size: 0.9em;
+    }
+
+    a {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+
+        span {
+            margin-left: 10px;
+            color: $black;
+        }
+
+        &:hover {
+            span {
+                color: $red;
+            }
+        }
+    }
+}
