@@ -5,8 +5,8 @@ Also because it's fun. :)
 Possible answers and categories can be added or tweaked as you wish.
 
 ```
-/app/data/categories.json
-/app/data/answers.json
+/app/assets/categories.json
+/app/assets/answers.json
 ```
 
 ## Todo
