@@ -10,6 +10,7 @@ const Answer = (() => {
         word,
         $category = document.querySelector('.category'),
         $answer = document.querySelector('.answer'),
+        allowedCharacters = [' ', ':', '\'', '-', '.'],
         winEvent = new Event('win');
 
     const _getRandomCategory = () => {
@@ -22,8 +23,8 @@ const Answer = (() => {
 
     const _getNewWord = () => {
         words = store.getWordsByCategoryId(category.id);
-        let randomNumber = $.getRandomNumber(words.length)
-
+        let randomNumber = $.getRandomNumber(words.length);
+        
         answer = words[randomNumber].toUpperCase();
         word = _obfuscateAnswer();
         _updateWord();
@@ -32,7 +33,7 @@ const Answer = (() => {
     const _obfuscateAnswer = () => {
         let wordArray = answer.split('');
         const obfuscated = wordArray.map(letter => {
-            if (letter !== ' ' && letter !== ':' && letter !== '\'') {
+            if (allowedCharacters.indexOf(letter) === -1) {
                 return '_';
             } else {
                 return letter;
