@@ -3,18 +3,31 @@
 const { $, store } = require('../../utils');
 
 const Answer = (() => {
-    let words = [],
+    let randomCategoryMode = true,
+        words = [],
         answer,
+        category,
         word,
         $category = document.querySelector('.category'),
         $answer = document.querySelector('.answer'),
         winEvent = new Event('win');
 
+    const _getRandomCategory = () => {
+        let categories = store.getCategories();
+        let randomNumber = $.getRandomNumber(categories.length);
+
+        console.log(categories);
+
+        category = categories[randomNumber];
+        console.log(category);
+        $category.innerText = category.name;
+    }
+
     const _getNewWord = () => {
-        $category.innerText = 'Games';
-        words = store.getWords();
+        words = store.getWordsByCategoryId(category.id);
         let randomNumber = $.getRandomNumber(words.length)
 
+        console.log(words, randomNumber);
         answer = words[randomNumber].toUpperCase();
         word = _obfuscateAnswer();
         _updateWord();
@@ -73,6 +86,9 @@ const Answer = (() => {
 
     return {
         init: () => {
+            if (randomCategoryMode) {
+                _getRandomCategory();
+            }
             _getNewWord();
         },
         guessLetter: letter => {

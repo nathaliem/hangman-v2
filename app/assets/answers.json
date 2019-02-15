@@ -423,6 +423,430 @@
         {
             "name": "Nioh",
             "categoryId": 1
+        },
+        {
+            "name": "Breaking Bad",
+            "categoryId": 2
+        },
+        {
+            "name": "Dollhouse",
+            "categoryId": 2
+        },
+        {
+            "name": "Legend of the Seeker",
+            "categoryId": 2
+        },
+        {
+            "name": "Merlin",
+            "categoryId": 2
+        },
+        {
+            "name": "Better Call Saul",
+            "categoryId": 2
+        },
+        {
+            "name": "Black Sails",
+            "categoryId": 2
+        },
+        {
+            "name": "Game of Thrones",
+            "categoryId": 2
+        },
+        {
+            "name": "Mr. Robot",
+            "categoryId": 2
+        },
+        {
+            "name": "La Casa De Papel",
+            "categoryId": 2
+        },
+        {
+            "name": "You",
+            "categoryId": 2
+        },
+        {
+            "name": "Firefly",
+            "categoryId": 2
+        },
+        {
+            "name": "Buffy The Vampire Slayer",
+            "categoryId": 2
+        },
+        {
+            "name": "Angel",
+            "categoryId": 2
+        },
+        {
+            "name": "Hercules",
+            "categoryId": 2
+        },
+        {
+            "name": "Xena The Warrior Princess",
+            "categoryId": 2
+        },
+        {
+            "name": "Bojack Horseman",
+            "categoryId": 2
+        },
+        {
+            "name": "That 70's Show",
+            "categoryId": 2
+        },
+        {
+            "name": "Boy Meets World",
+            "categoryId": 2
+        },
+        {
+            "name": "The Fresh Prince Of Bel-Air",
+            "categoryId": 2
+        },
+        {
+            "name": "Malcolm In The Middle",
+            "categoryId": 2
+        },
+        {
+            "name": "Future Man",
+            "categoryId": 2
+        },
+        {
+            "name": "The Killing",
+            "categoryId": 2
+        },
+        {
+            "name": "Lost",
+            "categoryId": 2
+        },
+        {
+            "name": "Atlanta",
+            "categoryId": 2
+        },
+        {
+            "name": "Arrested Development",
+            "categoryId": 2
+        },
+        {
+            "name": "Brooklyn Nine-Nine",
+            "categoryId": 2
+        },
+        {
+            "name": "Nathan For You",
+            "categoryId": 2
+        },
+        {
+            "name": "The Good Place",
+            "categoryId": 2
+        },
+        {
+            "name": "The Office",
+            "categoryId": 2
+        },
+        {
+            "name": "Parks And Recreation",
+            "categoryId": 2
+        },
+        {
+            "name": "Modern Family",
+            "categoryId": 2
+        },
+        {
+            "name": "It's Always Sunny In Philadelphia",
+            "categoryId": 2
+        },
+        {
+            "name": "Daredevil",
+            "categoryId": 2
+        },
+        {
+            "name": "Jessica Jones",
+            "categoryId": 2
+        },
+        {
+            "name": "Iron Fist",
+            "categoryId": 2
+        },
+        {
+            "name": "Luke Cage",
+            "categoryId": 2
+        },
+        {
+            "name": "The Defenders",
+            "categoryId": 2
+        },
+        {
+            "name": "A Series Of Unfortunate Events",
+            "categoryId": 2
+        },
+        {
+            "name": "Crazy Ex-Girlfriend",
+            "categoryId": 2
+        },
+        {
+            "name": "Galavant",
+            "categoryId": 2
+        },
+        {
+            "name": "Agents Of S.H.I.E.L.D.",
+            "categoryId": 2
+        },
+        {
+            "name": "Barry",
+            "categoryId": 2
+        },
+        {
+            "name": "The Punisher",
+            "categoryId": 2
+        },
+        {
+            "name": "The Marvellous Ms. Maisel",
+            "categoryId": 2
+        },
+        {
+            "name": "Star Wars: The Clone Wars",
+            "categoryId": 2
+        },
+        {
+            "name": "Star Wars: Rebels",
+            "categoryId": 2
+        },
+        {
+            "name": "Black Mirror",
+            "categoryId": 2
+        },
+        {
+            "name": "The End Of The Fucking World",
+            "categoryId": 2
+        },
+        {
+            "name": "Master Of None",
+            "categoryId": 2
+        },
+        {
+            "name": "Preacher",
+            "categoryId": 2
+        },
+        {
+            "name": "Psych",
+            "categoryId": 2
+        },
+        {
+            "name": "American Vandal",
+            "categoryId": 2
+        },
+        {
+            "name": "Bates Motel",
+            "categoryId": 2
+        },
+        {
+            "name": "Being Human",
+            "categoryId": 2
+        },
+        {
+            "name": "Justified",
+            "categoryId": 2
+        },
+        {
+            "name": "The Leftovers",
+            "categoryId": 2
+        },
+        {
+            "name": "Man Seeking Woman",
+            "categoryId": 2
+        },
+        {
+            "name": "The Musketeers",
+            "categoryId": 2
+        },
+        {
+            "name": "Nikita",
+            "categoryId": 2
+        },
+        {
+            "name": "Penny Dreadful",
+            "categoryId": 2
+        },
+        {
+            "name": "Fargo",
+            "categoryId": 2
+        },
+        {
+            "name": "Rick And Morty",
+            "categoryId": 2
+        },
+        {
+            "name": "The Simpsons",
+            "categoryId": 2
+        },
+        {
+            "name": "South Park",
+            "categoryId": 2
+        },
+        {
+            "name": "Family Guy",
+            "categoryId": 2
+        },
+        {
+            "name": "Freaks And Geeks",
+            "categoryId": 2
+        },
+        {
+            "name": "Battlestar Galactica",
+            "categoryId": 2
+        },
+        {
+            "name": "Scrubs",
+            "categoryId": 2
+        },
+        {
+            "name": "Silicon Valley",
+            "categoryId": 2
+        },
+        {
+            "name": "Veep",
+            "categoryId": 2
+        },
+        {
+            "name": "iZombie",
+            "categoryId": 2
+        },
+        {
+            "name": "Gravity Falls",
+            "categoryId": 2
+        },
+        {
+            "name": "Killjoys",
+            "categoryId": 2
+        },
+        {
+            "name": "Lucifer",
+            "categoryId": 2
+        },
+        {
+            "name": "Band Of Brothers",
+            "categoryId": 2
+        },
+        {
+            "name": "Blackadder",
+            "categoryId": 2
+        },
+        {
+            "name": "The Bridge",
+            "categoryId": 2
+        },
+        {
+            "name": "Seinfeld",
+            "categoryId": 2
+        },
+        {
+            "name": "Entourage",
+            "categoryId": 2
+        },
+        {
+            "name": "Six Feet Under",
+            "categoryId": 2
+        },
+        {
+            "name": "The Sopranos",
+            "categoryId": 2
+        },
+        {
+            "name": "Twin Peaks",
+            "categoryId": 2
+        },
+        {
+            "name": "Diva",
+            "categoryId": 3
+        },
+        {
+            "name": "Every Way That I Can",
+            "categoryId": 3
+        },
+        {
+            "name": "Amar Pelos Dois",
+            "categoryId": 3
+        },
+        {
+            "name": "Toy",
+            "categoryId": 3
+        },
+        {
+            "name": "Euphoria",
+            "categoryId": 3
+        },
+        {
+            "name": "Heroes",
+            "categoryId": 3
+        },
+        {
+            "name": "My Number One",
+            "categoryId": 3
+        },
+        {
+            "name": "Waterloo",
+            "categoryId": 3
+        },
+        {
+            "name": "Hold Me Now",
+            "categoryId": 3
+        },
+        {
+            "name": "What's Another Year",
+            "categoryId": 3
+        },
+        {
+            "name": "Love Shine A Light",
+            "categoryId": 3
+        },
+        {
+            "name": "Only Teardrops",
+            "categoryId": 3
+        },
+        {
+            "name": "Satellite",
+            "categoryId": 3
+        },
+        {
+            "name": "Wild Dances",
+            "categoryId": 3
+        },
+        {
+            "name": "Molitva",
+            "categoryId": 3
+        },
+        {
+            "name": "Rise Like A Phoenix",
+            "categoryId": 3
+        },
+        {
+            "name": "Fairytale",
+            "categoryId": 3
+        },
+        {
+            "name": "Puppet On A String",
+            "categoryId": 3
+        },
+        {
+            "name": "Save Your Kisses For Me",
+            "categoryId": 3
+        },
+        {
+            "name": "Making Your Mind Up",
+            "categoryId": 3
+        },
+        {
+            "name": "J'Aime La Vie",
+            "categoryId": 3
+        },
+        {
+            "name": "Hard Rock Hallelujah",
+            "categoryId": 3
+        },
+        {
+            "name": "Ne Partez Pas Sans Moi",
+            "categoryId": 3
+        },
+        {
+            "name": "Take Me To Your Heaven",
+            "categoryId": 3
         }
     ]
 }

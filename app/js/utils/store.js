@@ -1,13 +1,26 @@
 'use strict';
 
-const data = require('../../assets/answers.json');
+const categoryData = require('../../assets/categories.json');
+const answerData = require('../../assets/answers.json');
 
 const Store = (() => {
     return {
-        getCategories: () => {},
-        getWords: () => {
+        getCategories: () => {
+            let categories = [];
+            categoryData.categories.forEach(category => categories.push({
+                id: category.id,
+                name: category.name
+            }));
+
+            return categories;
+        },
+        getWordsByCategoryId: categoryId => {
             let words = [];
-            data.answers.forEach(answer => words.push(answer.name));
+            answerData.answers.forEach(answer => {
+                if (answer.categoryId === categoryId) {
+                    words.push(answer.name);
+                }
+            });
 
             return words;
         }

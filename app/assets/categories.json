@@ -3,6 +3,14 @@
         {
             "id": 1,
             "name": "Games"
+        },
+        {
+            "id": 2,
+            "name": "TV Shows"
+        },
+        {
+            "id": 3,
+            "name": "Eurovision: Winning Songs"
         }
     ]
 }

@@ -1,13 +1,22 @@
 .header__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: block;
     margin: 20px 0;
     padding: 0 2em;
+
+    @include min-width($small) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 .header__category {
-    text-align: left;
+    margin-bottom: 20px;
+
+    @include min-width($small) {
+        text-align: left;
+        margin-bottom: 0;
+    }
 
     h1 {
         text-transform: uppercase;
@@ -15,7 +24,9 @@
 }
 
 .header__score {
-    text-align: right;
+    @include min-width($small) {
+        text-align: right;
+    }
 }
 
 .header__category,
