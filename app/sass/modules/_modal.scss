@@ -38,6 +38,28 @@
     }
 }
 
+.modal__select {
+    margin-top: 20px;
+    width: 100%;
+    font-size: 1em;
+    font-family: $main-font, sans-serif;
+    border: 1px solid $red;
+    border-radius: 0;
+    padding: 0.5em;
+    background-color: transparent;
+}
+
+.modal--category {
+  .tingle-modal-box {
+    max-width: 400px;
+  }
+}
+
+.tingle-modal-box__footer {
+  display: flex;
+  justify-content: space-between;
+}
+
 .modal--win {
     h1 {
         color: $green;
@@ -144,8 +166,6 @@
   -------------------------------------------------------------- */
   
   .tingle-btn {
-    display: inline-block;
-    margin: 0 .5rem;
     padding: 1rem 2rem;
     border: none;
     background-color: grey;

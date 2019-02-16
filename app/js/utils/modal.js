@@ -12,9 +12,21 @@ const Modal = (function() {
         return modal;
     }
 
+    const _initActionModal = className => {
+        let modal = new tingle.modal({
+            footer: true,
+            closeMethods: ['overlay', 'escape'],
+            cssClass: [`modal--${className}`]
+        });
+        return modal;
+    }
+
     return {
         getModal: className => {
             return _initModal(className);
+        },
+        getActionModal : className => {
+            return _initActionModal(className);
         }
     }
 })();

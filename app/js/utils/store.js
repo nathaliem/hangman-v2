@@ -16,8 +16,9 @@ const Store = (() => {
         },
         getWordsByCategoryId: categoryId => {
             let words = [];
+            
             answerData.answers.forEach(answer => {
-                if (answer.categoryId === categoryId) {
+                if (answer.categoryId === parseInt(categoryId, 10)) {
                     words.push(answer.name);
                 }
             });

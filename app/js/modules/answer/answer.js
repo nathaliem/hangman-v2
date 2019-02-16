@@ -18,13 +18,16 @@ const Answer = (() => {
         let randomNumber = $.getRandomNumber(categories.length);
 
         category = categories[randomNumber];
+    }
+
+    const _setUpCategory = () => {
         $category.innerText = category.name;
     }
 
     const _getNewWord = () => {
         words = store.getWordsByCategoryId(category.id);
         let randomNumber = $.getRandomNumber(words.length);
-        
+
         answer = words[randomNumber].toUpperCase();
         word = _obfuscateAnswer();
         _updateWord();
@@ -85,6 +88,7 @@ const Answer = (() => {
         init: () => {
             if (randomCategoryMode) {
                 _getRandomCategory();
+                _setUpCategory();
             }
             _getNewWord();
         },
@@ -93,6 +97,14 @@ const Answer = (() => {
         },
         reveal: () => {
             _revealWord();
+        },
+        setCategory: categoryObject => {
+            category = categoryObject;
+            _setUpCategory();
+            randomCategoryMode = true;
+        },
+        setGameMode: mode => {
+            randomCategoryMode = (mode === 'random' ? true : false);
         }
     }
 })();

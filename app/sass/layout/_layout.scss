@@ -12,6 +12,7 @@
 
 .header__category {
     margin-bottom: 20px;
+    position: relative;
 
     @include min-width($small) {
         text-align: left;
@@ -20,6 +21,20 @@
 
     h1 {
         text-transform: uppercase;
+    }
+}
+
+.category__change {
+    position: absolute;
+    right: -5px;
+    bottom: 3px;
+    transform: translateX(100%);
+    font-size: .7em;
+    text-decoration: none;
+    color: $green;
+
+    &:hover {
+        color: $blue;
     }
 }
 
