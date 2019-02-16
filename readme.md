@@ -10,5 +10,5 @@ Possible answers and categories can be added or tweaked as you wish.
 ```
 
 ## Todo
-* Ability to choose the category you want to play in
+* ~~Ability to choose the category you want to play in~~
 * Testing
