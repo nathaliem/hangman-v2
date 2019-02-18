@@ -25,7 +25,6 @@
     "sass": "^1.17.0"
   },
   "dependencies": {
-    "modules": "^0.4.0",
     "tingle.js": "^0.14.0",
     "vivus": "^0.4.4"
   }
