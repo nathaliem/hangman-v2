@@ -5,7 +5,7 @@
   "main": "app/js/index.js",
   "scripts": {
     "dev": "parcel app/index.html",
-    "build": "parcel build app/index.html --no-cache --public-url ./",
+    "build": "jest && parcel build app/index.html --no-cache --public-url ./",
     "test": "jest"
   },
   "repository": {
@@ -29,11 +29,5 @@
   "dependencies": {
     "tingle.js": "^0.14.0",
     "vivus": "^0.4.4"
-  },
-  "jest": {
-    "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
-      "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
-    }
   }
 }

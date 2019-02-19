@@ -3,15 +3,24 @@
 const { $, store } = require('../../utils');
 
 const Answer = (() => {
-    let randomCategoryMode = true,
-        words = [],
+    let randomCategoryMode,
+        words,
         answer,
         category,
         word,
+        $category,
+        $answer,
+        allowedCharacters,
+        winEvent;
+
+    const _setVariables = () => {
+        randomCategoryMode = true,
+        words = [],
         $category = document.querySelector('.category'),
         $answer = document.querySelector('.answer'),
         allowedCharacters = [' ', ':', '\'', '-', '.'],
         winEvent = new Event('win');
+    }
 
     const _getRandomCategory = () => {
         let categories = store.getCategories();
@@ -86,6 +95,7 @@ const Answer = (() => {
 
     return {
         init: () => {
+            _setVariables();
             if (randomCategoryMode) {
                 _getRandomCategory();
                 _setUpCategory();
@@ -105,6 +115,19 @@ const Answer = (() => {
         },
         setGameMode: mode => {
             randomCategoryMode = (mode === 'random' ? true : false);
+        },
+        /**** for tests ****/
+        getNewWord: () => {
+            _setVariables();
+            _getRandomCategory();
+            _getNewWord();
+        },
+        setNewWord: answerToBeSet => {
+            _setVariables();
+            _getRandomCategory();
+            answer = answerToBeSet;
+            word = _obfuscateAnswer();
+            _updateWord();
         }
     }
 })();
